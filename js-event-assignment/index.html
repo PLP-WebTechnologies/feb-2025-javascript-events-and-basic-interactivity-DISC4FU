@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web Experience</h1>
+        </header>
+
+        <!-- Interactive Buttons Section -->
+        <section class="interactive-section">
+            <h2>Interactive Elements</h2>
+            <div class="button-container">
+                <button id="colorChangeBtn" class="interactive-btn">Click Me!</button>
+                <button id="secretBtn" class="interactive-btn">Find the Secret!</button>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="gallery-section">
+            <h2>Image Gallery</h2>
+            <div class="gallery-container">
+                <button class="gallery-nav prev">❮</button>
+                <div class="gallery">
+                    <img src="https://picsum.photos/800/400?random=1" alt="Gallery Image 1" class="active">
+                    <img src="https://picsum.photos/800/400?random=2" alt="Gallery Image 2">
+                    <img src="https://picsum.photos/800/400?random=3" alt="Gallery Image 3">
+                </div>
+                <button class="gallery-nav next">❯</button>
+            </div>
+        </section>
+
+        <!-- Tabs Section -->
+        <section class="tabs-section">
+            <h2>Information Tabs</h2>
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <h3>Welcome to Tab 1</h3>
+                        <p>This is the content for the first tab. Feel free to explore!</p>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <h3>Welcome to Tab 2</h3>
+                        <p>This is the content for the second tab. Keep exploring!</p>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <h3>Welcome to Tab 3</h3>
+                        <p>This is the content for the third tab. You're doing great!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <h2>Contact Form</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
